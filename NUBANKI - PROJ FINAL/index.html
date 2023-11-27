@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nubanki Investing</title>
+</head>
+
+<body>
+    <header>
+        <div class="container_header">
+            <div class="div_logo">
+                <img src="asset/img/logo.png" alt="">
+            </div>
+            <div class="div_links">
+                <a href="">Comece a Investir</a>
+                <a href="">Simulador</a>
+                <a href="">Investimentos</a>
+                <a href="">Precos</a>
+                <a href="">Blog</a>
+                <a href="">InvestNews</a>
+            </div>
+            <div class="div_btn">
+                <a href="">Quero ser NuInvesting</a>
+                <button>LOGIN</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container_pai">
+        <div class="div_textos">
+            <h3>NuInvest > Simulador de Investimentos</h3>
+            <h1>Simulador de Investimentos</h1>
+            <br>
+            <span id="texto_tex">Conheça o simulador de investimentos da NuInvest. Veja quanto seu dinheiro pode render
+                ao simular investimentos de tesouro direto, CDB e LC, LCI e LCA em relação a poupança.</span>
+        </div>
+    </div>
+
+    <div class="container_meio">
+        <div class="div_texto_meio">
+            <h1>Simule agora</h1>
+            <span>Faça uma comparação e comece a investir em uma esperiência fácil e intuitiva:</span>
+        </div>
+        <header class="div_header_meio">
+            <div class="div_meio_header">
+                <a href="#">Tesouro Prefixado</a>
+                <a href="#">Tesouro Selic</a>
+                <a href="#">Tesouro IPCA+</a>
+                <a href="#">CDB e LC</a>
+                <a href="#">LCI e LCA</a>
+            </div>
+        </header>
+
+        <div class="container_conteudo">
+            <div class="container1_conteudo">
+                <div class="conteudo1">
+                    <span>Para começar, qual valor você gostaria de investir?</span>
+                    <br>
+                    <h1 id="valor_inic">R$5.250,00</h1>
+                    <button onclick="calc" id="button">+</button>
+                    <button onclick="diminu" id="button">-</button>
+                </div>
+                <div class="conteudo2">
+                    <span>E por mês, quanto gostaria de depositar?</span>
+                    <h1 id="valor_mes">R$250,00</h1>
+                    <button onclick="calc" id="button">+</button>
+                    <button onclick="diminu" id="button">-</button>
+                </div>
+                <div class="conteudo3">
+                    <span>Quanto tempo deixaria o seu dinheiro investido?</span> <br>
+                    <input type="range" max="360" min="1">
+                </div>
+            </div>
+            <div class="container2_conteudo">
+                <div class="conteudo_1">
+                    <span>Em 2 anos voce teria</span>
+                    <h1>R$10.000,00</h1>
+                    <div class="linha"></div>
+                    <h2>Valor liquido com os impostos descontados</h2>
+                    <h2>Total investido: R$ 12.450,00</h2>
+                    <h2>Na poupanca, seu dinheiro renderia: R$ 1.097,18</h2>
+                    <h2>No Tesouro Prefixado, seu dinheiro renderia: R$ 2.041,48</h2>
+                </div>
+
+                <p>Valores utilizados no simulador de investimentos (referentes a data de ultima atualizacao - esses
+                    valores podem alterar de acordo com o mercado): <br>
+                    - Data da ultima atualizacao: 30/06/2022
+                    <br> - Porcentagem de rentabilidade da Poupanca: 0,50% a.m.
+                    <br>- Porcentagem de rentabilidade do Tesouro Prefixado: 13,08% a.a.
+                </p>
+            </div>
+
+           
+
+        </div>
+        <div class="container3_conteudo">
+            <div class="div_btn1">
+                <button>Conheca esse produto</button>
+            </div>
+            <div class="div_link1">
+                <a href="">Veja todas as opcoes de investimentos -></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
