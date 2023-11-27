@@ -59,30 +59,32 @@
                 <div class="conteudo1">
                     <span>Para começar, qual valor você gostaria de investir?</span>
                     <br>
-                    <h1 id="valor_inic">R$5.250,00</h1>
-                    <button onclick="calc" id="button">+</button>
-                    <button onclick="diminu" id="button">-</button>
+                    <h1 id="valor_inic">R$0,00</h1>
+                    <button onclick="calc()" id="button">+</button>
+                    <button onclick="diminu()" id="button">-</button>
                 </div>
                 <div class="conteudo2">
-                    <span>E por mês, quanto gostaria de depositar?</span>
-                    <h1 id="valor_mes">R$250,00</h1>
-                    <button onclick="calc" id="button">+</button>
-                    <button onclick="diminu" id="button">-</button>
+                    <span>E por mês, quanto gostaria de depositar?</span><br>
+                    <h1 id="valor_mes">R$0,00</h1>
+                    <button onclick="calc_mes()" id="button">+</button>
+                    <button onclick="diminu_mes()" id="button">-</button>
                 </div>
                 <div class="conteudo3">
                     <span>Quanto tempo deixaria o seu dinheiro investido?</span> <br>
-                    <input type="range" max="360" min="1">
+                    <!-- <input type="range" max="360" min="1"> -->
+                    <input type="number" id="tempo_investido">
+                    <button onclick="juros()">Calcular</button>
                 </div>
             </div>
             <div class="container2_conteudo">
                 <div class="conteudo_1">
-                    <span>Em 2 anos voce teria</span>
-                    <h1>R$10.000,00</h1>
+                    <span>Em X anos voce teria</span>
+                    <h1 id="res_final">R$0,00</h1>
                     <div class="linha"></div>
                     <h2>Valor liquido com os impostos descontados</h2>
-                    <h2>Total investido: R$ 12.450,00</h2>
-                    <h2>Na poupanca, seu dinheiro renderia: R$ 1.097,18</h2>
-                    <h2>No Tesouro Prefixado, seu dinheiro renderia: R$ 2.041,48</h2>
+                    <h2 id="total_inv">Total investido: R$ 0,00</h2>
+                    <h2 id="poupanca">Na poupanca, seu dinheiro renderia: R$ 0,00</h2>
+                    <h2 id="prefixado">No Tesouro Prefixado, seu dinheiro renderia: R$ 0,00</h2>
                 </div>
 
                 <p>Valores utilizados no simulador de investimentos (referentes a data de ultima atualizacao - esses
@@ -93,7 +95,7 @@
                 </p>
             </div>
 
-           
+
 
         </div>
         <div class="container3_conteudo">
@@ -108,7 +110,7 @@
 
 
 
-
+    <script src="script/js.js"></script>
 
 </body>
 
